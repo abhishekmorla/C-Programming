@@ -49,7 +49,7 @@ int main()
 	{
 		comp = 's';
 	}
-	else if (n < 33 && n > 66)
+	else if (n > 33 && n < 66)
 	{
 		comp = 'g';
 	}
