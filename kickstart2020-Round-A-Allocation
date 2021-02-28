@@ -21,23 +21,21 @@ int main()
 {
 	int t;
 	int arr[20];
-	printf("Number of test cases: \n");
 	scanf("%d",&t);
-	int tc=1;
+	int tc=0;
 	while(t--)
 	{
+		tc++;
 		int asknum,budget;
-		printf("Write total number of cost of houses:");
-		scanf("%d",&asknum);
-		printf("Write total budget:");
-		scanf("%d",&budget);
+		scanf("%d %d",&asknum,&budget);
 		for(int i=0; i < asknum ; i++)
 		{
 			scanf("%d",&arr[i]);
 		}
+		int ans=0;
 		// for sorting
 		sort(asknum,arr);
-		int ans=0;
+		
 		
 		for(int i=0; i < asknum ; i++)
 		{
@@ -48,6 +46,7 @@ int main()
 			}
 		}
 		printf("Case %d#: %d",tc,ans);
+		printf("\n");
 	}
 }
 
